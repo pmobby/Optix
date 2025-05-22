@@ -42,7 +42,7 @@ namespace Optix.Service
                 
                 var records = csv.GetRecords<CSVToMovieRecord>().ToList();
 
-                // Convert to Movie entities
+                
                 var movies = records.Select(r => new Movie
                 {
                     Title = r.Title,
